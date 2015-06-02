@@ -1,0 +1,45 @@
+{
+  "name": "EadingFramework",
+  "version": "1.0",
+  "license": "MIT",
+  "homepage": "https://github.com/leaf8742/EadingFramework",
+  "authors": {
+    "LEAF S": "leaf_8742@163.com"
+  },
+  "source": {
+    "git": "https://github.com/leaf8742/EadingFramework/.git",
+    "tag": "1.0",
+    "submodules": true
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0",
+    "osx": "10.8"
+  },
+  "public_header_files": "",
+  "source_files": "",
+  "subspecs": [
+    {
+      "name": "APManager",
+      "source_files": "APManager/APManager/*.{h,m}",
+      "platforms":{
+        "ios": "6.0"
+      },
+			"public_header_files":"APManager/APManager.h",
+      "ios": {
+        "frameworks": [
+          "UIKit",
+          "Foundation"
+        ]
+      },
+      "osx": {
+        "frameworks": [
+          "UIKit",
+          "Foundation"
+        ]
+      },
+			"requires_arc":false
+    }
+  ]
+}
+
